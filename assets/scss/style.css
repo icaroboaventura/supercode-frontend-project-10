@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Ubuntu Regular";
+}
+
+h2 {
+  text-align: center;
+  color: #957554;
+  font-size: 2.8125rem;
+  font-family: "Ubuntu Medium";
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Ubuntu Medium";
+}
+
+p {
+  text-align: center;
+  color: #957554;
+  font-size: 1.5rem;
+  font-family: "Ubuntu Medium";
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #957554;
+  font-size: 1.5rem;
+  font-family: "Ubuntu Medium";
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background-color: #dfaa5b;
+  color: #fff;
+  padding: 1.5rem 8.125rem;
+  border-radius: 0.3125rem;
+}
+
+body {
+  max-width: 90rem;
+  margin-inline: auto;
+}
+body header nav {
+  margin-block: 3.125rem 6.25rem;
+  display: flex;
+  grid-template-columns: none;
+  grid-template-rows: none;
+  gap: 4.75rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+body header nav .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4.75rem;
+}
+body header .hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  padding-block: 20rem 7.8125rem;
+  background: url(../imgs/hero_image.png) no-repeat center;
+  background-size: cover;
+}
+body header .hero h1 {
+  margin-bottom: 0.9375rem;
+}
+body header .hero p {
+  color: #fff;
+  margin-bottom: 2.5rem;
+}
+body main .facilities {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+}
+body main .facilities .facilities_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+body main .facilities .facilities_icons .icon {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+body main .facilities .facilities_icons .icon p {
+  font-family: "Ubuntu Regular";
+}
+body main .rooms_rates {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+body main .rooms_rates .rooms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+body main .rooms_rates .rooms .room {
+  width: 39.375rem;
+  padding-block: 18.75rem 3.75rem;
+  background: url(../imgs/standard_twin_room.png) no-repeat center;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+body main .rooms_rates .rooms .room a {
+  padding-inline: 3.5625rem;
+}
+body main .rooms_rates .rooms .room:nth-of-type(2) {
+  background-image: url(../imgs/standard_room.png);
+}
+body main .rooms_rates .rooms .room:nth-of-type(3) {
+  background-image: url(../imgs/standard_view_room.png);
+}
+body main .rooms_rates .rooms .room:nth-of-type(3) {
+  background-image: url(../imgs/deluxe_room.png);
+}
+body main .book {
+  padding: 9.6875rem 15rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.375rem;
+}
+body footer {
+  padding: 1.25rem;
+  background-color: #111;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.125rem;
+}
+body footer .infos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+}
+body footer .infos p {
+  font-family: "Ubuntu Light";
+}
+body footer .links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+body footer .links p,
+body footer .links a {
+  font-family: "Ubuntu Light";
+}
+
+/*# sourceMappingURL=style.css.map */

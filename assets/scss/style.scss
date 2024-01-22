@@ -1,0 +1,154 @@
+@use "mixin";
+@use "var";
+
+@font-face {
+  font-family: "Ubuntu Medium";
+  src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Ubuntu Regular";
+  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu Light";
+  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
+h1 {
+  @include mixin.text(center, var.$clr-white, 5rem, var.$ff-ubuntu-regular);
+}
+
+h2 {
+  @include mixin.text(
+    center,
+    var.$clr-primary,
+    2.8125rem,
+    var.$ff-ubuntu-medium
+  );
+}
+
+h3 {
+  @include mixin.text(center, var.$clr-white, 2.5rem, var.$ff-ubuntu-medium);
+}
+
+p {
+  @include mixin.text(center, var.$clr-primary, 1.5rem, var.$ff-ubuntu-medium);
+}
+
+a {
+  text-decoration: none;
+  @include mixin.text(center, var.$clr-primary, 1.5rem, var.$ff-ubuntu-medium);
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background-color: var.$clr-secundary;
+  color: var.$clr-white;
+  padding: 1.5rem 8.125rem;
+  border-radius: 0.3125rem;
+}
+
+body {
+  max-width: 90rem;
+  margin-inline: auto;
+  header {
+    nav {
+      margin-block: 3.125rem 6.25rem;
+      @include mixin.display(
+        flex,
+        none,
+        none,
+        4.75rem,
+        center,
+        center,
+        column,
+        nowrap
+      );
+      .navbar {
+        @include mixin.flex(flex, row, nowrap, center, center, 4.75rem);
+      }
+    }
+    .hero {
+      @include mixin.flex(flex, column, nowrap, center, center, none);
+      padding-block: 20rem 7.8125rem;
+      background: url(../imgs/hero_image.png) no-repeat center;
+      background-size: cover;
+      h1 {
+        margin-bottom: 0.9375rem;
+      }
+      p {
+        color: var.$clr-white;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  main {
+    .facilities {
+      @include mixin.flex(flex, column, nowrap, center, center, 3.125rem);
+      .facilities_icons {
+        @include mixin.flex(flex, row, wrap, center, center, 10rem);
+        .icon {
+          @include mixin.flex(flex, column, nowrap, center, center, 1.25rem);
+          p {
+            font-family: var.$ff-ubuntu-regular;
+          }
+        }
+      }
+    }
+    .rooms_rates {
+      @include mixin.flex(flex, column, nowrap, center, center, 2rem);
+      .rooms {
+        @include mixin.flex(flex, row, wrap, center, center, 2rem);
+        .room {
+          width: 39.375rem;
+          padding-block: 18.75rem 3.75rem;
+          background: url(../imgs/standard_twin_room.png) no-repeat center;
+          background-size: cover;
+          border-radius: 5px;
+          @include mixin.flex(flex, column, nowrap, center, center, none);
+          a {
+            padding-inline: 3.5625rem;
+          }
+        }
+        .room:nth-of-type(2) {
+          background-image: url(../imgs/standard_room.png);
+        }
+        .room:nth-of-type(3) {
+          background-image: url(../imgs/standard_view_room.png);
+        }
+        .room:nth-of-type(3) {
+          background-image: url(../imgs/deluxe_room.png);
+        }
+      }
+    }
+    .book {
+      padding: 9.6875rem 15rem;
+      @include mixin.flex(flex, column, nowrap, center, center, 2.375rem);
+    }
+  }
+
+  footer {
+    padding: 1.25rem;
+    background-color: #111;
+    @include mixin.flex(flex, row, wrap, center, space-between, 3.125rem);
+    .infos {
+      @include mixin.flex(flex, column, nowrap, center, center, none);
+      p {
+        font-family: var.$ff-ubuntu-light;
+      }
+    }
+    .links {
+      @include mixin.flex(flex, column, nowrap, center, center, 1.25rem);
+      p,
+      a {
+        font-family: var.$ff-ubuntu-light;
+      }
+    }
+    form {
+    }
+  }
+}
